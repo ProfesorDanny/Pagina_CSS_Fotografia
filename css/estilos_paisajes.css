@@ -1,0 +1,166 @@
+body {
+	background-color: black;
+	font-family: 'Dancing Script';
+}
+#contenido {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #82c3a6;
+	alignment-adjust: central;
+	margin: auto;
+	border-radius: 10px;
+  animation: rebote 1s;
+}
+
+@media all and (min-width:900px) {
+#contenido {
+	width: 900px
+}
+}
+/*inicio header*************************************************************/
+
+header {
+	background-color: #5b7989;
+	width: 100%;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+header div h1 {
+	color: white;
+	text-shadow: 2px 2px #02010a;
+	text-align: center;
+}
+header div nav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+#menu {
+	width: 100%;
+}
+
+@media all and (min-width:900px) {
+header div h1 {
+	text-align: left;
+}
+#menu {
+	width: 40%;
+}
+}
+header div nav a {
+	color: white;
+	text-align: center;
+	padding: 30px;
+	flex-grow: 1;
+}
+.activo {
+	text-decoration: none;
+}
+
+.img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: #d5c75f;
+	border: 1px;
+}
+.img figure {
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+}
+
+@media all and (min-width:900px) {
+.img figure {
+	width: 30%;
+}
+}
+.img figure img {
+	width: 100%;
+	transition-property: transform;
+	transition-duration: 1s;
+}
+
+/*inicio footer*************************************************************/
+
+footer {
+	clear: both;
+	width: 100%;
+	bottom: 0;
+	background: #c6d5c5;
+	padding: 20px 40px;
+	border-radius: 0 0 10px 10px;
+}
+.footer {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer div div {
+	flex-grow: 1;
+	flex-basis: 100%;
+	padding: 10px;
+}
+
+@media all and (min-width:900px) {
+footer div div {
+	flex-basis: 20%;
+}
+}
+footer div h4 {
+	margin: 5px 0;
+	font-size: 30px;
+}
+footer div p {
+	margin: 0;
+}
+/****************************************************************************************/
+/*FILTROS*/
+
+#filtro1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#filtro2{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#filtro3{
+  -webkit-filter: grayscale(80%);
+  filter: sepia(90%);
+}
+
+#filtro4{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#filtro6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/******************************************************************************************/
+/*ANIMACION DE REBOTE*/
+@-webkit-keyframes rebote{
+0%{
+  margin-top: 150%;
+}
+60%{
+  margin-top: -5%;
+}
+100%{
+  margin-top: 0%;
+}
+}
